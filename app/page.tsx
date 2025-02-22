@@ -9,6 +9,8 @@ export default function Home() {
     <>
       <h1 className="text-3xl">Welcome to Next.js!</h1>
       <Hello></Hello>
+      <Analytics></Analytics>
+      <SpeedInsights></SpeedInsights>
     </>
   );
 }
