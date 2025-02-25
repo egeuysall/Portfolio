@@ -39,7 +39,7 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "Ege Uysal Portfolio | Photography & Web Development",
+    title: "Ege Uysal Portfolio | Creativity",
     description: "Explore Ege Uysal's portfolio, featuring a diverse range of creative projects in photography, web development, and UI/UX design. See how modern technologies and design principles merge for impactful results.",
     url: "https://egeuysal.com",
     siteName: "Ege Uysal",
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@egecreates",
     creator: "@egecreates",
-    title: "Ege Uysal Portfolio | Photography & Web Development",
+    title: "Ege Uysal Portfolio | Creativity",
     description: "Discover Ege Uysal's portfolio, highlighting photography, web development, and UI/UX design projects with cutting-edge technologies.",
     images: ["/og-image.png"],
   },
