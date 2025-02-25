@@ -13,4 +13,4 @@ Disallow:
 User-agent: *
 Crawl-delay: 10
 
-Sitemap: https://egeuysal.com/sitemap.website.xml
+Sitemap: https://www.egeuysal.com/sitemap.xml
