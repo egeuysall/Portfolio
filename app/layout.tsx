@@ -14,11 +14,16 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Ege Uysal Portfolio",
+    default: "Ege Uysal Portfolio | Photography & Web Development",
     template: "%s | Ege Uysal",
   },
-  description: "Explore the portfolio of Ege Uysal, showcasing photography, web development, and creative projects.",
-  keywords: ["Photography", "Web Development", "Portfolio", "Ege Uysal", "Creative Projects", "React", "Next.js", "UI/UX Design", "Front-End Development", "Full-Stack Development", "JavaScript", "HTML", "CSS", "Web Design", "App Development", "Photography Portfolio", "Tech Portfolio", "Creative Technology", "Developer", "Photographer", "Web Designer", "Front-End Developer", "Back-End Developer", "Mobile Development", "Coding", "Digital Design", "User Interface", "User Experience", "Productivity Tools", "Tech Projects"],
+  description: "Discover the portfolio of Ege Uysal, a creative professional specializing in photography, web development, and UI/UX design. Explore innovative projects showcasing modern web technologies, photography expertise, and digital design.",
+  keywords: [
+    "Photography Portfolio", "Web Development", "UI/UX Design", "Ege Uysal", "React Developer", "Next.js", 
+    "JavaScript", "CSS", "Web Design", "Front-End Development", "App Development", "Creative Technology",
+    "Photography", "Web Designer", "Tech Portfolio", "Full-Stack Developer", "Front-End Developer", 
+    "UI/UX", "Creative Projects", "Digital Design"
+  ],
   authors: [{ name: "Ege Uysal", url: "https://egeuysal.com" }],
   creator: "Ege Uysal",
   publisher: "Ege Uysal",
@@ -26,16 +31,16 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://egeuysal.com"),
 
   alternates: {
-    canonical: "https://yourwebsite.com",
+    canonical: "https://egeuysal.com",
     languages: {
       "en-US": "https://egeuysal.com/",
-      "tr-TR": "https://yourwebsite.com/",
+      "tr-TR": "https://egeuysal.com/",
     },
   },
 
   openGraph: {
-    title: "Ege Uysal Portfolio",
-    description: "Explore the portfolio of Ege Uysal, showcasing photography, web development, and creative projects.",
+    title: "Ege Uysal Portfolio | Photography & Web Development",
+    description: "Explore Ege Uysal's portfolio, featuring a diverse range of creative projects in photography, web development, and UI/UX design. See how modern technologies and design principles merge for impactful results.",
     url: "https://egeuysal.com",
     siteName: "Ege Uysal",
     locale: "en_US",
@@ -45,7 +50,7 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Website Preview",
+        alt: "Ege Uysal Portfolio Preview",
       },
     ],
   },
@@ -54,8 +59,8 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@egecreates",
     creator: "@egecreates",
-    title: "Ege Uysal Portfolio",
-    description: "Explore the portfolio of Ege Uysal, showcasing photography, web development, and creative projects.",
+    title: "Ege Uysal Portfolio | Photography & Web Development",
+    description: "Discover Ege Uysal's portfolio, highlighting photography, web development, and UI/UX design projects with cutting-edge technologies.",
     images: ["/og-image.png"],
   },
 
