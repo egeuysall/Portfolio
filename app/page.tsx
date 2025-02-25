@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <main className="flex flex-col items-center justify-center min-h-screen bg-[#f2f2f2] text-[#2e2e2e]">
       <header>
-        <h1 className="text-4xl font-bold text-center mb-2">Ege Uysal</h1>
+        <h1 className="text-4xl font-bold text-center mb-2">Ege Uysal Portfolio</h1>
         <p className="text-sm text-center text-gray-500 mb-4">
           Photographer, Developer, Creator
         </p>
