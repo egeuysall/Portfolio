@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://egeuysal.com"),
 
   alternates: {
-    canonical: "https://egeuysal.com",
+    canonical: "https://www.egeuysal.com/",
     languages: {
       "en-US": "https://egeuysal.com/",
       "tr-TR": "https://egeuysal.com/",
