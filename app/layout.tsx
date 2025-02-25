@@ -14,7 +14,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Ege Uysal Portfolio | Photography & Web Development",
+    default: "Ege Uysal Portfolio | Creativity",
     template: "%s | Ege Uysal",
   },
   description: "Discover the portfolio of Ege Uysal, a creative professional specializing in photography, web development, and UI/UX design. Explore innovative projects showcasing modern web technologies, photography expertise, and digital design.",
