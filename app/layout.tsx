@@ -1,6 +1,7 @@
-import type { Metadata } from "next";
+import { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Head from "next/head";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,15 +15,15 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: {
-    default: "Ege Uysal Portfolio | Photography & Web Development",
+    default: "Ege Uysal Portfolio",
     template: "%s | Ege Uysal",
   },
-  description: "Discover the portfolio of Ege Uysal, a creative professional specializing in photography, web development, and UI/UX design. Explore innovative projects showcasing modern web technologies, photography expertise, and digital design.",
+  description: "Explore the portfolio of Ege Uysal, a creative professional in photography, web development, and UI/UX design.",
   keywords: [
     "Photography Portfolio", "Web Development", "UI/UX Design", "Ege Uysal", "React Developer", "Next.js", 
     "JavaScript", "CSS", "Web Design", "Front-End Development", "App Development", "Creative Technology",
     "Photography", "Web Designer", "Tech Portfolio", "Full-Stack Developer", "Front-End Developer", 
-    "UI/UX", "Creative Projects", "Digital Design"
+    "UI/UX", "Creative Projects", "Digital Design", "Freelance Web Developer Portfolio"
   ],
   authors: [{ name: "Ege Uysal", url: "https://egeuysal.com" }],
   creator: "Ege Uysal",
@@ -31,7 +32,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://egeuysal.com"),
 
   alternates: {
-    canonical: "https://egeuysal.com",
+    canonical: "https://www.egeuysal.com/",
     languages: {
       "en-US": "https://egeuysal.com/",
       "tr-TR": "https://egeuysal.com/",
@@ -39,8 +40,8 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title: "Ege Uysal Portfolio | Photography & Web Development",
-    description: "Explore Ege Uysal's portfolio, featuring a diverse range of creative projects in photography, web development, and UI/UX design. See how modern technologies and design principles merge for impactful results.",
+    title: "Ege Uysal Portfolio | Creativity",
+    description: "Explore the portfolio of Ege Uysal, a creative professional in photography, web development, and UI/UX design.",
     url: "https://egeuysal.com",
     siteName: "Ege Uysal",
     locale: "en_US",
@@ -59,8 +60,8 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     site: "@egecreates",
     creator: "@egecreates",
-    title: "Ege Uysal Portfolio | Photography & Web Development",
-    description: "Discover Ege Uysal's portfolio, highlighting photography, web development, and UI/UX design projects with cutting-edge technologies.",
+    title: "Ege Uysal Portfolio | Creativity",
+    description: "Explore the portfolio of Ege Uysal, a creative professional in photography, web development, and UI/UX design.",
     images: ["/og-image.png"],
   },
 
@@ -88,11 +89,55 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const jsonLdData = {
+    "@context": "http://schema.org",
+    "@type": "Person",
+    "name": "Ege Uysal",
+    "url": "https://www.egeuysal.com", 
+    "sameAs": [
+      "https://www.linkedin.com/in/egeuysall",
+      "https://twitter.com/egecreates",
+      "https://www.instagram.com/egeuysalo"
+    ],
+    "image": "https://res.cloudinary.com/ddjnqljd8/image/upload/v1739920346/Portfolio/profile-image.png",
+    "description": "Ege Uysal is a skilled developer, photographer, and creator, passionate about building innovative digital solutions and capturing the beauty of the world through photography.",
+    "jobTitle": "Developer, Photographer, Creator",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Ege Uysal"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "2371 Madiera Ct.",
+      "addressLocality": "Chicago",
+      "addressRegion": "Illinois",
+      "postalCode": "60089",
+      "addressCountry": "United States"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+1 (657) 900-0231",
+      "contactType": "Customer Service",
+      "areaServed": "EN",
+      "availableLanguage": "English, Turkish"
+    },
+    "creator": {
+      "@type": "Organization",
+      "name": "Ege Uysal"
+    }
+  };
+
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(jsonLdData),
+          }}
+        />
+      </head>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {children}
       </body>
     </html>
