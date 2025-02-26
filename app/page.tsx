@@ -9,24 +9,32 @@ const lato = Lato({ subsets: ["latin"], weight: ["700"] });
 export default function Home() {
   return (
     <div className="flex items-center justify-center bg-[#f2f2f2] dark:bg-[#2e2e2e]">
-      <div className="bg-[#f2f2f2] h-screen w-[75vw] flex gap-8 flex-col dark:bg-[#2e2e2e]">
+      <div className="bg-[#f2f2f2] h-screen w-[85vw] flex gap-8 flex-col dark:bg-[#2e2e2e]">
         <header className="w-full flex justify-center">
           <nav className="flex w-full">
-            <div className="h-16 w-screen bg-[#2e2e2e] mt-8 rounded-md flex items-center justify-between shadow-md dark:bg-[#f2f2f2]">
+            <div className="h-14 w-screen bg-[#2e2e2e] mt-8 rounded-md flex items-center justify-between shadow-md dark:bg-[#f2f2f2]">
               <Image
                 src="/assets/logo.svg"
-                width={32}
-                height={32}
+                width={24}
+                height={24}
                 alt="Logo"
                 className="ml-6 dark:invert"
               />
               <Image
                 src="/assets/menu-icon.svg"
-                width={32}
-                height={32}
+                width={24}
+                height={24}
                 alt="Menu Icon"
-                className="mr-6 dark:invert"
+                className="mr-6 dark:invert sm:hidden flex"
               />
+              <div>
+                <ul className="flex text-[#f2f2f2] dark:text-[#2e2e2e] gap-6 mr-6">
+                  <li>Links</li>
+                  <li>Contact</li>
+                  <li>Skills</li>
+                  <li>Projects</li>
+                </ul>
+              </div>
             </div>
           </nav>
         </header>
