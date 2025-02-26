@@ -24,7 +24,7 @@ export default function Home() {
                 src="/assets/menu-icon.svg"
                 width={32}
                 height={32}
-                alt="Logo"
+                alt="Menu Icon"
                 className="mr-6 dark:invert"
               />
             </div>
@@ -33,7 +33,7 @@ export default function Home() {
 
         <main className="flex flex-col flex-1 gap-3">
           <p className={`${poppins.className} text-lg mt-4 text-[#2e2e2e] font-medium dark:text-[#f2f2f2]`}>
-            Hi, I'm Ege Uysal.
+            Hi, I&apos;m Ege Uysal.
           </p>
           <h1 className={`${lato.className} text-4xl text-[#2e2e2e] dark:text-[#f2f2f2]`}>
             Photographer
