@@ -25,10 +25,10 @@ export default function Home() {
                 width={24}
                 height={24}
                 alt="Menu Icon"
-                className="mr-6 dark:invert sm:hidden flex"
+                className="dark:invert sm:flex md:hidden lg:hidden"
               />
               <div>
-                <ul className="flex text-[#f2f2f2] dark:text-[#2e2e2e] gap-6 mr-6">
+                <ul className="hidden sm:hidden md:flex lg:flex text-[#f2f2f2] dark:text-[#2e2e2e] gap-6 mr-6">
                   <li>Links</li>
                   <li>Contact</li>
                   <li>Skills</li>
