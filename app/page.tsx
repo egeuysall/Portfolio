@@ -11,8 +11,8 @@ export default function Home() {
     <div className="flex items-center justify-center bg-[#f2f2f2] dark:bg-[#2e2e2e]">
       <div className="bg-[#f2f2f2] h-screen w-[75vw] flex gap-8 flex-col dark:bg-[#2e2e2e]">
         <header className="w-full flex justify-center">
-          <nav className="flex">
-            <div className="h-16 w-full bg-[#2e2e2e] mt-8 rounded-md flex items-center justify-between shadow-md dark:bg-[#f2f2f2]">
+          <nav className="flex w-full">
+            <div className="h-16 w-screen bg-[#2e2e2e] mt-8 rounded-md flex items-center justify-between shadow-md dark:bg-[#f2f2f2]">
               <Image
                 src="/assets/logo.svg"
                 width={32}
