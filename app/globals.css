@@ -3,12 +3,12 @@
 @tailwind utilities;
 
 html {
-  font-size: 62.5%;
+  font-size: 62.5%; /* Default base size for 1rem = 10px */
 }
 
 @media (min-width: 1024px) {
   html {
-    font-size: 68.75%;
+    font-size: 68.75%; /* Scale up for larger screens */
   }
 }
 
@@ -21,27 +21,5 @@ html {
 @media (min-width: 1600px) {
   html {
     font-size: 81.25%;
-  }
-}
-
-body {
-  font-size: 1rem;
-}
-
-@media (min-width: 1024px) {
-  body {
-    font-size: 1.1rem;
-  }
-}
-
-@media (min-width: 1280px) {
-  body {
-    font-size: 1.2rem;
-  }
-}
-
-@media (min-width: 1600px) {
-  body {
-    font-size: 1.3rem;
   }
 }

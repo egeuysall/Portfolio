@@ -1,12 +1,11 @@
-// pages/index.tsx
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Lato, Poppins } from "next/font/google";
 import "./globals.css";
 
-// Initialize fonts
+// Initialize fonts with only necessary weights
 const lato = Lato({ subsets: ["latin"], weight: ["700"] });
-const poppins = Poppins({ subsets: ["latin"], weight: ["400", "500"] });
+const poppins = Poppins({ subsets: ["latin"], weight: ["400"] });
 
 export default function Home() {
   return (

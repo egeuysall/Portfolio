@@ -23,21 +23,21 @@ export default {
         primary: "#7f8c8f", // Custom primary button color
       },
       fontSize: {
-        'xs': '1.333rem',
-        'sm': '1.6rem',
-        'p': '1.6rem',
-        'h6': '1.92rem',
-        'h5': '2.304rem',
-        'h4': '2.765rem',
-        'h3': '3.318rem',
-        'h2': '3.981rem',
-        'h1': '4.777rem',
+        xs: '1.333rem',
+        sm: '1.6rem',
+        p: '1.6rem',
+        h6: '1.92rem',
+        h5: '2.304rem',
+        h4: '2.765rem',
+        h3: '3.318rem',
+        h2: '3.981rem',
+        h1: '4.777rem',
       },
       padding: {
-        'btn': '1.6rem',
+        btn: '1.6rem',
       },
       borderRadius: {
-        'btn': '0.375rem',
+        btn: '0.375rem',
       },
       letterSpacing: {
         default: '-3.2%',
@@ -50,7 +50,7 @@ export default {
         heading: ['Lato', 'sans-serif'],
         button: ['Poppins', 'sans-serif'],
       },
-      darkMode: 'class',
+      darkMode: 'class', // Ensures dark mode can be toggled via class
     },
   },
   plugins: [],

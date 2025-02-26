@@ -4,39 +4,31 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    domains: ['egeuysal.com'], // Your portfolio domain for optimized images
+    domains: ['egeuysal.com'],
   },
-  async redirects() {
-    return [
-      {
-        source: '/old-page',
-        destination: '/new-page',
-        permanent: true,
-      },
-    ];
-  },
+  redirects: async () => [
+    {
+      source: '/old-page',
+      destination: '/new-page',
+      permanent: true,
+    },
+  ],
   webpack(config, { isServer }) {
     if (!isServer) {
-      config.resolve.fallback = {
-        fs: false,
-      };
+      config.resolve.fallback = { fs: false };
     }
     return config;
   },
-  async headers() {
-    return [
-      {
-        source: '/(.*)', // Apply headers to all pages
-        headers: [
-          { key: 'X-Frame-Options', value: 'DENY' },
-          { key: 'Content-Security-Policy', value: "default-src 'self'" },
-        ],
-      },
-    ];
-  },
-  experimental: {
-    esmExternals: true,
-  },
+  headers: async () => [
+    {
+      source: '/(.*)',
+      headers: [
+        { key: 'X-Frame-Options', value: 'DENY' },
+        { key: 'Content-Security-Policy', value: "default-src 'self'" },
+      ],
+    },
+  ],
+  experimental: { esmExternals: true },
 };
 
 export default nextConfig;
