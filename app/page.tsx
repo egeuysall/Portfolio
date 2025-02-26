@@ -3,25 +3,17 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center justify-center min-h-screen bg-[#f2f2f2] text-[#2e2e2e]">
-      <header>
-        <h1 className="text-4xl font-bold text-center mb-2">Ege Uysal Portfolio</h1>
-        <p className="text-sm text-center text-gray-500 mb-4">
-          Photographer, Developer, Creator
-        </p>
+    <main className="bg-[#f2f2f2] h-screen w-screen flex items-center flex-col">
+      <header className="flex">
+        <nav className="flex">
+          <div className="h-12 w-12 bg-[#2e2e2e] mt-2">
+            {/* Content */}
+          </div>
+        </nav>
       </header>
 
-      <hr className="w-2/3 border-t-2 border-gray-600 mb-8" />
-
-      <article className="max-w-lg text-center">
-        <p className="mb-4">
-          Welcome to my portfolio! Here you can explore my work in photography,
-          web development, and digital design. Stay tuned for more updates soon.
-        </p>
-
-        <Analytics />
-        <SpeedInsights />
-      </article>
+      <Analytics />
+      <SpeedInsights />
     </main>
   );
 }
