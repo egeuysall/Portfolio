@@ -4,6 +4,7 @@ import { Lato, Poppins } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import "./globals.css";
 
 const lato = Lato({ subsets: ["latin"], weight: ["700"] });
 const poppins = Poppins({ subsets: ["latin"], weight: ["400", "500"] });
