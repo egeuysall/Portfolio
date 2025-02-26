@@ -44,9 +44,9 @@ export default function Home() {
           </h1>
           <Analytics />
           <SpeedInsights />
-          <div className="flex gap-2">
-            <button className="bg-[#7f8c8f] mt-6 w-1/2 py-3 rounded-md cursor-pointer font-bold text-[#ecf0f1]">Download CV</button>
-            <button className="bg-[#7f8c8f] mt-6 w-1/2 py-3 rounded-md cursor-pointer font-bold text-[#ecf0f1]">Reach Out</button>
+          <div className="flex gap-3">
+            <button className={`${poppins.className} bg-[#7f8c8f] mt-6 w-1/2 py-3 rounded-md cursor-pointer font-bold text-[#ecf0f1] hover:scale-105 hover:opacity-80 active:opacity-70 transition duration-300`}>Download CV</button>
+            <button className={`${poppins.className} bg-[#7f8c8f] mt-6 w-1/2 py-3 rounded-md cursor-pointer font-bold text-[#ecf0f1] hover:scale-105 hover:opacity-80 active:opacity-70 transition duration-300`}>Reach Out</button>
           </div>
         </main>
       </div>
