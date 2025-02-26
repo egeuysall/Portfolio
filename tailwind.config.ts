@@ -20,6 +20,7 @@ export default {
         darkGrey: "#7F7F7F",
         greyLight: "#A5A5A5",
         greyMuted: "#CCCCCC",
+        primary: "#7f8c8f", // Custom primary button color
       },
       fontSize: {
         'xs': '1.333rem',
