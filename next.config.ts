@@ -4,7 +4,7 @@ const nextConfig: NextConfig = {
   reactStrictMode: true,
   swcMinify: true,
   images: {
-    domains: ['example.com'],
+    domains: ['egeuysal.com'], // Your portfolio domain for optimized images
   },
   async redirects() {
     return [
@@ -26,9 +26,10 @@ const nextConfig: NextConfig = {
   async headers() {
     return [
       {
-        source: '/about',
+        source: '/(.*)', // Apply headers to all pages
         headers: [
-          { key: 'X-Custom-Header', value: 'Hello World' },
+          { key: 'X-Frame-Options', value: 'DENY' },
+          { key: 'Content-Security-Policy', value: "default-src 'self'" },
         ],
       },
     ];
