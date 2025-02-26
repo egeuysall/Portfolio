@@ -1,7 +1,7 @@
 import { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Head from "next/head";  // You're importing it, use it here
+import Head from "next/head";  // You're importing it, use it correctly
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -129,14 +129,14 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <Head>
+      <head>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(jsonLdData),
           }}
         />
-      </Head>
+      </head>
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {children}
       </body>
