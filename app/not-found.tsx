@@ -22,7 +22,7 @@ export default function NotFound() {
 
   return (
     <div
-      className={`${poppins.className} flex flex-col items-center justify-center h-screen text-center p-4 bg-[#f2f2f2] dark:bg-[#2e2e2e] md:flex-row md:gap-24`}
+      className={`${poppins.className} flex flex-col items-center justify-center h-screen text-center p-4 bg-background dark:bg-darkBackground md:flex-row md:gap-24`}
     >
       <div>
         <Image
@@ -34,26 +34,20 @@ export default function NotFound() {
         />
       </div>
       <div>
-      <h1
-          className={`${lato.className} text-7xl font-bold mb-4 text-[#2e2e2e] dark:text-[#f2f2f2] hidden md:block md:text-9xl`}
-        >
+        <h1 className={`${lato.className} text-h1 text-text dark:text-darkText`}>
           404
         </h1>
-        <h2
-          className={`${lato.className} text-3xl font-bold mb-4 text-[#2e2e2e] dark:text-[#f2f2f2] md:text-5xl`}
-        >
+        <h2 className={`${lato.className} text-h2 text-text dark:text-darkText`}>
           Page Lost in the Matrix
         </h2>
         <p
-          className="text-lg mb-6 text-[#2e2e2e] cursor-pointer dark:text-[#f2f2f2] md:text-2xl"
+          className="text-p text-mutedText dark:text-darkMutedText cursor-pointer"
           onClick={handleClick}
         >
           {message}
         </p>
         <Link href="/">
-          <button className="bg-[#7f8c8f] text-[#f2f2f2] px-5 py-3 rounded cursor-pointer font-bold hover:opacity-75 transition duration-300 md:text-xl">
-            Go Home
-          </button>
+          <button className="btn">Go Home</button>
         </Link>
       </div>
     </div>
